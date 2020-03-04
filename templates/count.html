@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>count</title>
+</head>
+<body>
+
+
+<div>
+    <h1>There are {{ count }} words in your text</h1>
+    <h1>
+        Your text: <h2 style="color: deeppink">{{ fulltext }}</h2>
+    </h1>
+</div>
+<div>
+    <h1>Word Count: </h1>
+    {% for word, counttotal in sortedwords %}
+    <h2>{{ word }} = {{ counttotal }}</h2>
+    {% endfor %}
+</div>
+
+
+</body>
+</html>
