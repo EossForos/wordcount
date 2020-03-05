@@ -9,6 +9,7 @@
 </head>
 <body>
 <h1>Homepage!</h1>
+<a href="{% url 'about' %}">About Page</a>
 
 <form action="{% url 'count' %}">
     <label>
@@ -19,5 +20,6 @@
     <br/>
     <input type="submit" value="Count!" />
 </form>
+
 </body>
 </html>
